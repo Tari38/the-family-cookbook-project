@@ -1,10 +1,10 @@
-import React from "react";
-// import { Form, Row, Col } from "react-bootstrap";
-import FormCreateAccount from "../components/FormCreateAccount";
+import React, { Component } from "react";
+
+import Form_CreateAccount from "../components/forms/Form_CreateAccount";
 
 
-function WelcomePage() {
-
+class WelcomePage extends Component {
+  render() {
   return(
     <>
       <div className="welcome-section">
@@ -23,13 +23,11 @@ function WelcomePage() {
       </div>
       <hr />
       <div className="create-account-section">
-        <FormCreateAccount />
-          
+        <Form_CreateAccount />
       </div>
     </>
     );
- 
+  }
 }
-
 
 export default WelcomePage;

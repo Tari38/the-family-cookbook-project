@@ -1,23 +1,37 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Header from './components/Header';
-import WelcomePage from './pages/WelcomePage';
-// import BGImage from "./images/white-parchment-paper-texture.jpg";
+import Header from "./components/Header";
+import WelcomePage from "./pages/WelcomePage";
+import WelcomePageCont from "./pages/WelcomePageCont";
+import Terms from "./pages/Terms";
+
+import FORM_CREATE_ACCOUNT from "./components/forms/Form_CreateAccount";
+import "./App.css";
 
 function App() {
-  
-return (
+ 
+  return (
     <>
-      <div className="App" id="bg-image">
-        <div>
+      <Router>
+        <div className="App">
           <Header />
+          <Route path="/" exact>
+            <WelcomePage />
+          </Route>
+          <Route path="/components/forms/Form_CreateAccount">
+            <FORM_CREATE_ACCOUNT />
+          </Route>
+          <Route path="/pages/WelcomePageCont">
+            <WelcomePageCont />
+          </Route>
+          <Route path="/pages/Terms">
+            <Terms />
+          </Route>
         </div>
-        <div>
-          <WelcomePage />
-        </div>
-      </div>
+      </Router>
     </>
-    )
-  }
+  );
+ }
 
 export default App;

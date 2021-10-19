@@ -1,0 +1,30 @@
+#navbar {
+  background-color: #fff;
+  color: #90B1C1;
+  width: 100%;
+}
+
+#header-title {
+  display: inline-flex;
+  margin-left: 20px;
+  letter-spacing: 1.5pt;
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+.welcome-section {
+  margin: 20px;
+}
+
+.create-account-section {
+  margin: 20px;
+}
+
+.selector {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}

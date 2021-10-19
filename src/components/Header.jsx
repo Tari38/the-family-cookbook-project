@@ -2,7 +2,8 @@ import React from 'react';
 import { Nav, NavbarBrand } from 'react-bootstrap';
 import FCBLogo from "../images/FCB_logo-horizontal-hires-75.png";
 
-const Header = () => (
+function Header() {
+  return (
   <Nav id="navbar">
     <NavbarBrand>
       <img src={FCBLogo} alt=""></img>
@@ -10,5 +11,5 @@ const Header = () => (
     </NavbarBrand>
   </Nav>
 );
-
+  }
 export default Header;
