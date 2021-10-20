@@ -1,15 +1,14 @@
-import React from 'react';
-import { Nav, NavbarBrand } from 'react-bootstrap';
+import React from "react";
+import { Navbar, NavbarBrand } from "react-bootstrap";
 import FCBLogo from "../images/FCB_logo-horizontal-hires-75.png";
 
-function Header() {
-  return (
-  <Nav id="navbar">
+const Header = () => (
+  <Navbar id="navbar">
     <NavbarBrand>
       <img src={FCBLogo} alt=""></img>
-        <h6 id="header-title">The Family Cookbook Project</h6>
+      <h6 id="header-title">The Family Cookbook Project</h6>
     </NavbarBrand>
-  </Nav>
+  </Navbar>
 );
-  }
+
 export default Header;

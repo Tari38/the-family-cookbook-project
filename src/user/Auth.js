@@ -1,15 +1,15 @@
 import React, { useState, useContext } from "react";
 
 import { Button, Card, Input } from "react-bootstrap";
-import LoadingSpinner from "../../shared/components/LoadingSpinner";
+import LoadingSpinner from "../shared/components/LoadingSpinner";
 import {
   VALIDATOR_EMAIL,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE
-} from "../../shared/util/validators";
-import { useForm } from "../../shared/hooks/form-hook";
-import { useHttpClient } from "../../shared/hooks/http-hook";
-import { AuthContext } from "../../user/auth-context";
+} from "../shared/util/validators";
+import { useForm } from "../shared/hooks/form-hook";
+import { useHttpClient } from "../shared/hooks/http-hook";
+import { AuthContext } from "../user/auth-context";
 import "./Auth.css";
 
 const Auth = () => {

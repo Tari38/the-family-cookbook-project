@@ -1,71 +1,40 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-
-:root {
-  --sidebar-flex: 1.5;
-  --condiv-flex: 6;
-  --fontsize-p: 1.2rem;
-  --fontsize-nav: 1.6rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: 0;
-}
-
 .App {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
-  scroll-behavior: scroll;
-}
-
-html {
-  font-family: "Roboto", monospace;
-  line-height: 1.15;
-  -webkit-tap-highlight-color: transparent;
-  display: block;
-  box-sizing: border-box;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  overflow: scroll;
-  height: 100%;
-  min-height: 100%;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #323232;
+  font-family: sans-serif;
   text-align: center;
+  background-image: inherit;
+}
+
+#bg-image {
+  margin: 5px;
   background-image: url("./images/white-parchment-paper-texture.jpg");
   background-color: #fff;
   background-size: cover;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+#navbar {
+  background-color: #fff;
+  color: #90B1C1;
 }
 
-/* fonts */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat Alternates", sans-serif;
+#header-title {
+  display: inline-flex;
+  margin-left: 20px;
+  letter-spacing: 1.5pt;
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
   font-weight: bold;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
+.form-main {
+  padding: 5px;
+  margin: 5px;
+  border: solid 2px #000;
+}
+
+.welcome-section {
+  margin: 20px;
+}
+
+.create-account-section {
+  margin: 20px;
 }

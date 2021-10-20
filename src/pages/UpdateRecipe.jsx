@@ -2,14 +2,14 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 import { Button, Card, Input } from "react-bootstrap";
-import LoadingSpinner from "../../shared/components/UIElements/LoadingSpinner";
+import LoadingSpinner from "../shared/components/LoadingSpinner";
 import {
   VALIDATOR_REQUIRE,
   VALIDATOR_MINLENGTH
-} from "../../shared/util/validators";
-import { useForm } from "../../shared/hooks/form-hook";
-import { useHttpClient } from "../../shared/hooks/http-hook";
-import { AuthContext } from "../../user/auth-context";
+} from "../shared/util/validators";
+import { useForm } from "../shared/hooks/form-hook";
+import { useHttpClient } from "../shared/hooks/http-hook";
+import { AuthContext } from "../user/auth-context";
 import "./RecipeForm.css";
 
 const UpdateRecipe = () => {

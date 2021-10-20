@@ -3,11 +3,11 @@ import { useHistory } from "react-router-dom";
 
 import { Button, Input } from "react-bootstrap";
 
-import LoadingSpinner from "../../shared/components/LoadingSpinner";
-import { VALIDATOR_REQUIRE } from "../../shared/util/validators";
-import { useForm } from "../../shared/hooks/form-hook";
-import { useHttpClient } from "../../shared/hooks/http-hook";
-import { AuthContext } from "../../user/auth-context";
+import LoadingSpinner from "../shared/components/LoadingSpinner";
+import { VALIDATOR_REQUIRE } from "../shared/util/validators";
+import { useForm } from "../shared/hooks/form-hook";
+import { useHttpClient } from "../shared/hooks/http-hook";
+import { AuthContext } from "../user/auth-context";
 import "./RecipeForm.css";
 
 const NewRecipe = () => {
